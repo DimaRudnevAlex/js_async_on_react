@@ -1,0 +1,39 @@
+.content {
+	position: relative;
+	top: 125px;
+	left: 300px;
+	width: calc(100% - 300px);
+	height: calc(100% - 125px);
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+.product {
+	background-color: rgb(65, 72, 86);
+	display: flex;
+	padding: 10px;
+	gap: 50px;
+	border-radius: 10px;
+	transition: box-shadow 0.5s ease;
+	
+	&:hover {
+		box-shadow: 0px 0px 20px 15px rgba(25, 126, 204, 0.2);
+	}
+	
+	&__image img {
+		border-radius: 20px;
+	}
+	&__image {
+		width: 155px;
+		height: 222px;
+	}
+	&__content {
+		width: 230px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+	}
+}
